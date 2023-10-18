@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>This is Contact Page.</h1>
+  
+  <fieldset> 
+    <!-- fieldset ko kaam border diney ho -->
+    <legend>Comment</legend>
+    <!-- legend tag ko kaam title diney ho -->
+    <form action="mailto:shahiaaayus@gmail.com" method="post" enctype="text/plain">
+      <!-- method ko kaam chai request k garne ho sodhxa -->
+      <p>
+        <label for="userName">User Name:</label>
+        <!-- label ra input chai co related hunxa -->
+        <input type="text" id="userName" name="userName" placeholder="your full name" required>
+      </p>
+      <p>
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" required placeholder="someone@example.com">
+      </p>
+      <p>
+        <label for="date">Date</label>
+        <input type="date" id="date" name="date ">
+
+      </p>
+      <h3>Gender</h3>
+      <p>
+      <input type="radio" name="gender" id="male">
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="female">
+      <label for="female">Female</label>
+      <input type="radio" name="gender" id="other">
+      <label for="other">Other</label>
+      </p>
+      <h3>Habit</h3>
+      <p>
+      <input type="checkbox" name="habit" id="dance" checked>
+      <label for="dance">Dance</label>
+      <input type="checkbox" name="habit" id="sing">
+      <label for="sing">Sing</label>
+      <input type="checkbox" name="habit" id="sleep">
+      <label for="sleep">Sleep</label>
+      </p>
+      <textarea name="msg" id="msg" cols="30" rows="10" placeholder="your comment"></textarea>
+      <p>
+        <h3>Select Your Country</h3>
+        <select name="country" id="country">
+          <option value="nepal">Nepal</option>
+          <option value="india">India</option>
+          <option value="china">China</option>
+        </select>
+      </p>
+      <p>
+        <h3>your fav coffee</h3>
+        <select name="coffee" id="coffee">
+
+          <optgroup label="Hard Coffee">
+            <option value="espresso">espresso</option>
+          <option value="mochiato">mochiato</option>
+          </optgroup>
+          <optgroup label="Light Coffee">
+            <option value="latte">latte</option>
+          <option value="americano">americano</option>
+          </optgroup>
+
+        </select>
+      </p>
+        <br>
+      <div>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+      </div>
+    </form>
+  </fieldset>
+</body>
+</html>
